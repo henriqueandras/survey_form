@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+</head>
+<body>
+
+	<h1 id="title">Business Survey Form</h1>
+	<p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+
+	<div id="body">
+	<form id="survey-form">
+
+	<label for="name" id="name-label">
+	<p>Name</p>
+	</label>
+	<input type="text" id="name" placeholder="Enter your name" required>
+
+	<label for="email" id="email-label">
+	<p>Email</p>
+	<input type="email" id="email" placeholder="Enter your Email" required>
+	</label>
+
+	<label for="number" id="number-label">
+	<p>Age <span class="clue">(optional)</span></p>	
+	<input type="number" id="number" placeholder="Age" min="10" max="99">
+	</label>
+
+	<p>Which option best describes your current role?</p>
+
+	<div class="container">
+	  <div class="select-container">
+	    <select id="dropdown">
+	      <option disabled selected value>Select current role</option>
+	      <option value="student">Student</option>
+	      <option value="job">Full Time Job</option>
+		  <option value="preferNo">Prefer not to say</option>
+	      <option value="other">Other</option>
+	    </select>    
+	  </div>
+	</div>
+
+	<p>Would you recommend our brand to a friend?</p>
+	<label>
+	<input type="radio" name="user-recommend" value="definitely" checked>Definitely</input>
+	<br>
+	</label>
+	<label>
+	<input type="radio" name="user-recommend" value="maybe">Maybe</input>
+	<br>
+	</label>
+	<label>
+	<input type="radio" name="user-recommend" value="not-sure">Not sure</input>
+	<br>
+	</label>
+
+	<p>What is your favorite feature of our brand?</p>
+
+	<div class="container">
+	  <div class="select-container">
+	    <select id="most-like">
+			<option disabled selected value>Select an option</option>
+			<option value="challenges">Challenges</option>
+			<option value="projects">Projects</option>
+			<option value="community">Community</option>
+			<option value="openSource">Open Source</option>	
+	    </select>    
+	  </div>
+	</div>
+
+	<p>What to you like to see improved? <span class="clue">(Check all that apply)</span></p>	
+	<label>
+	<input type="checkbox" name="prefer" value="front-end-projects">Front-end Projects</input>
+	<br>
+	</label>
+	<label>
+	<input type="checkbox" name="prefer" value="back-end-projects">Back-end Projects</input>
+	<br>
+	</label>
+	<label>
+	<input type="checkbox" name="prefer" value="data-visualization">Data Visualization</input>
+	<br>
+	</label>
+	<label>
+	<input type="checkbox" name="prefer" value="challenges">Challenges</input>
+	<br>
+	</label>
+	<label>
+	<input type="checkbox" name="prefer" value="open-source-community">Open Source Community</input>
+	<br>
+	</label>
+	<label>
+	<input type="checkbox" name="prefer" value="gitter-help-rooms">Gitter help rooms</input>
+	<br>
+	</label>
+	<label>
+	<input type="checkbox" name="prefer" value="videos">Videos</input>
+	<br>
+	</label>
+	<label>
+	<input type="checkbox" name="prefer" value="city-meetups">City Meetups</input>
+	<br>
+	</label>
+	<label>
+	<input type="checkbox" name="prefer" value="wiki">Wiki</input>
+	<br>
+	</label>
+	<label>
+	<input type="checkbox" name="prefer" value="forum">Forum</input>
+	<br>
+	</label>
+	<label>
+	<input type="checkbox" name="prefer" value="additional-courses">Additional Courses</input>
+	<br>
+	</label>
+
+	<p>Any comments or suggestions?</p>
+	<textarea id="comments" placeholder="Enter your comment here..."></textarea>
+	<br>
+	<button type="submit" id="submit">Submit</button>
+
+	</form>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
